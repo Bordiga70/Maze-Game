@@ -5,4 +5,3 @@ class_name Main
 
 func get_level_points() -> int:
 	return level_points.get_child_count()
-

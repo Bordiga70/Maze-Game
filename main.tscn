@@ -1,60 +1,38 @@
 [gd_scene load_steps=9 format=3 uid="uid://dywcygbour4sr"]
 
 [ext_resource type="Texture2D" uid="uid://61txi3pdb3fc" path="res://sprites/terrain/wall_sheet.png" id="1_h4vne"]
-[ext_resource type="Script" path="res://main.gd" id="1_rq5sw"]
-[ext_resource type="PackedScene" uid="uid://bw8yfducmk25h" path="res://player.tscn" id="2_0ykgj"]
+[ext_resource type="Script" uid="uid://bq7hfjurqrf6f" path="res://main.gd" id="1_rq5sw"]
+[ext_resource type="PackedScene" uid="uid://bw8yfducmk25h" path="res://Scenes/Player/player.tscn" id="2_0ykgj"]
 [ext_resource type="Texture2D" uid="uid://dfy1a0cg3agt8" path="res://sprites/terrain/walls.png" id="2_4sm38"]
-[ext_resource type="PackedScene" uid="uid://bur24ykxt04xy" path="res://scenes/GUI/gui.tscn" id="3_odkih"]
+[ext_resource type="PackedScene" uid="uid://bur24ykxt04xy" path="res://Scenes/GUI/GameGUI/gui.tscn" id="3_odkih"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nk7lg"]
 texture = ExtResource("1_h4vne")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
-0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
 1:0/0 = 0
-1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-1:0/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oak3d"]
 texture = ExtResource("2_4sm38")
 texture_region_size = Vector2i(64, 64)
 1:0/0 = 0
-1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-1:0/0/physics_layer_0/angular_velocity = 0.0
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
 0:1/0 = 0
-0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:1/0/physics_layer_0/angular_velocity = 0.0
 0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
 1:1/0 = 0
-1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-1:1/0/physics_layer_0/angular_velocity = 0.0
 1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
 2:1/0 = 0
-2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-2:1/0/physics_layer_0/angular_velocity = 0.0
 2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
 1:2/0 = 0
-1:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-1:2/0/physics_layer_0/angular_velocity = 0.0
 1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
 0:2/0 = 0
-0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:2/0/physics_layer_0/angular_velocity = 0.0
 0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
 2:2/0 = 0
-2:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-2:2/0/physics_layer_0/angular_velocity = 0.0
 2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
 2:0/0 = 0
-2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-2:0/0/physics_layer_0/angular_velocity = 0.0
 2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
 0:0/0 = 0
-0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
 
 [sub_resource type="TileSet" id="TileSet_axaq5"]
@@ -73,7 +51,6 @@ tile_set = SubResource("TileSet_axaq5")
 format = 2
 layer_0/name = "walls"
 layer_1/name = "floor"
-layer_1/tile_data = PackedInt32Array()
 
 [node name="Checkpoint" type="Node" parent="Test"]
 

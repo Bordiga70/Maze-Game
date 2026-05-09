@@ -1,0 +1,14 @@
+[gd_scene load_steps=5 format=3 uid="uid://cja6hu5p2qdo"]
+
+[ext_resource type="Texture2D" uid="uid://rftcyp4epsbg" path="res://sprites/menu_buttons/resume_button.png" id="1_o3h77"]
+[ext_resource type="Texture2D" uid="uid://s883drx015ns" path="res://sprites/menu_buttons/resume_button_pressed.png" id="2_4h3nn"]
+[ext_resource type="Texture2D" uid="uid://colwnvk5spbmc" path="res://sprites/menu_buttons/resume_button_hover.png" id="3_h00c6"]
+[ext_resource type="Script" uid="uid://dranv6cmwdro0" path="res://Scenes/GUI/Buttons/Resume/resume_button_script.gd" id="4_4h3nn"]
+
+[node name="ResumeButton" type="TextureButton"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_o3h77")
+texture_pressed = ExtResource("2_4h3nn")
+texture_hover = ExtResource("3_h00c6")
+script = ExtResource("4_4h3nn")
