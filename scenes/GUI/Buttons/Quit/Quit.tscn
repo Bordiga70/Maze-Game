@@ -1,0 +1,12 @@
+[gd_scene load_steps=5 format=3 uid="uid://dj6tfeo6t74i7"]
+
+[ext_resource type="Script" uid="uid://dtpi7kvt11ywe" path="res://Scenes/GUI/Buttons/Quit/quit_button_script.gd" id="1_f71tl"]
+[ext_resource type="Texture2D" uid="uid://c7vqc66gux3o4" path="res://sprites/menu_buttons/quit_button.png" id="2_5v0eo"]
+[ext_resource type="Texture2D" uid="uid://gn2bxcakydb" path="res://sprites/menu_buttons/quit_button_pressed.png" id="3_6g4bm"]
+[ext_resource type="Texture2D" uid="uid://b8kj33ihinthv" path="res://sprites/menu_buttons/quit_button_hover.png" id="4_0f7a7"]
+
+[node name="QuitButton" type="TextureButton"]
+texture_normal = ExtResource("2_5v0eo")
+texture_pressed = ExtResource("3_6g4bm")
+texture_hover = ExtResource("4_0f7a7")
+script = ExtResource("1_f71tl")

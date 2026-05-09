@@ -1,0 +1,12 @@
+[gd_scene load_steps=5 format=3 uid="uid://bphkj28kj7gs2"]
+
+[ext_resource type="Script" uid="uid://ll3vwh1ardnu" path="res://Scenes/GUI/Buttons/Menu/menu_button_script.gd" id="1_kqtml"]
+[ext_resource type="Texture2D" uid="uid://ctpbe1gytnskc" path="res://sprites/menu_buttons/menu_button.png" id="2_sqmfv"]
+[ext_resource type="Texture2D" uid="uid://eiaup3dktuhm" path="res://sprites/menu_buttons/menu_button_pressed.png" id="3_2s7jq"]
+[ext_resource type="Texture2D" uid="uid://l4yenva1p1gt" path="res://sprites/menu_buttons/menu_button_hover.png" id="4_6lktq"]
+
+[node name="MenuButton" type="TextureButton"]
+texture_normal = ExtResource("2_sqmfv")
+texture_pressed = ExtResource("3_2s7jq")
+texture_hover = ExtResource("4_6lktq")
+script = ExtResource("1_kqtml")

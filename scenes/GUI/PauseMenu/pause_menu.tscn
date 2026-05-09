@@ -1,0 +1,70 @@
+[gd_scene load_steps=5 format=3 uid="uid://brhfa8j2erlv3"]
+
+[ext_resource type="PackedScene" uid="uid://cja6hu5p2qdo" path="res://Scenes/GUI/Buttons/Resume/Resume.tscn" id="1_fibm0"]
+[ext_resource type="PackedScene" uid="uid://bphkj28kj7gs2" path="res://Scenes/GUI/Buttons/Menu/Menu.tscn" id="2_7t27j"]
+
+[sub_resource type="GDScript" id="GDScript_j48ix"]
+
+[sub_resource type="SystemFont" id="SystemFont_t6c2s"]
+font_names = PackedStringArray("Times New Roman")
+
+[node name="GameMenu" type="CanvasLayer"]
+process_mode = 2
+script = SubResource("GDScript_j48ix")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0901961, 0.0392157, 0.109804, 1)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="separator" type="Control" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = SubResource("SystemFont_t6c2s")
+theme_override_font_sizes/font_size = 64
+text = "GAME PAUSED"
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="ResumeButton" parent="MarginContainer/VBoxContainer2/HBoxContainer" instance=ExtResource("1_fibm0")]
+layout_mode = 2
+
+[node name="MenuButton" parent="MarginContainer/VBoxContainer2/HBoxContainer" instance=ExtResource("2_7t27j")]
+layout_mode = 2
